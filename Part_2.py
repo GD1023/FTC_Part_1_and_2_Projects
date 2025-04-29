@@ -1,6 +1,6 @@
 import pygame
 import sys
-import random
+
 
 BLACK = (0, 0, 0)
 BLUE= (0,0,255)
