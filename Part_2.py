@@ -1,9 +1,11 @@
 import pygame
 import sys
+import random
 
 BLACK = (0, 0, 0)
 BLUE= (0,0,255)
 YELLOW= (255,255,0)
+
 
 # Create the starting screen
 pygame.init()
@@ -31,8 +33,9 @@ def draw_square(x,y,val):
 
 
 def update_screen():
+
     for y in range(78,-1,-1):
-        for x in range(80):
+        for x in range(79):
             if grid[y][x] == 2:  # Sand
                 if grid[y + 1][x] == 0: #Sand falling down
                     grid[y][x], grid[y + 1][x] = 0, 2
@@ -53,6 +56,7 @@ def update_screen():
                         grid[y][x], grid[y][x - 1] = 0, 1
                     elif x < 79 and grid[y][x + 1] == 0:
                         grid[y][x], grid[y][x + 1] = 0, 1
+
 
 while True:
     # this is just a constant loop listening for user inputs

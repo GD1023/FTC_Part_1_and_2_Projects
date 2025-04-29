@@ -7,7 +7,7 @@ import sys
 # This code is written in such a way that you can change the numebr of columns and rows, AS LONG AS WHEN THEY ARE MULTIPLED BY THE CELL SIZE, you get 800
 # For Example, if you want 80 rows and 80 columns, make the cell_size 10 or you can have 160 rows and columns with the cell size being 5
 # The reason for this is because otherwise it goes out of the index
-ROWS, COLS = 160,160
+ROWS, COLS = 800,800
 CELL_SIZE=5
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
